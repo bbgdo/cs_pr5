@@ -7,7 +7,7 @@ public class DatabaseConnection {
     private final String url = "jdbc:postgresql://localhost:5432/csproducts";
     private final String user = "postgres";
     private final String password = "postgre";
-    private BasicConnectionPool connectionPool;
+    private final BasicConnectionPool connectionPool;
 
     public DatabaseConnection() throws SQLException {
         connectionPool = BasicConnectionPool.create(url, user, password);

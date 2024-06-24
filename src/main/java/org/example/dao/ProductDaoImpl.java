@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductDaoImpl implements ProductDao {
-    private DatabaseConnection dbConnection;
+    private final DatabaseConnection dbConnection;
 
     public ProductDaoImpl(DatabaseConnection dbConnection) {
         this.dbConnection = dbConnection;
